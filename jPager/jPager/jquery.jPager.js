@@ -137,7 +137,7 @@ date: 2013.5.22
 							next = $(".next", self);				
 						
 						// 有页码的点击事件
-						page_num_li.live("click", function(){
+						page_num_li.die().live("click", function(){
 							var that = $(this),							
 								cur_page = that.attr("cur_page");
 								elem.hide();						
@@ -192,7 +192,7 @@ date: 2013.5.22
 						});
 						
 						// 首页点击
-						first.live("click", function(){
+						first.die().live("click", function(){
 							var cur_page = first.attr("cur_page");
 
 							if(cur_page!=""){
@@ -201,7 +201,7 @@ date: 2013.5.22
 						});
 
 						// 尾页点击
-						last.live("click", function(){
+						last.die().live("click", function(){
 							var cur_page = last.attr("cur_page");
 
 							if(cur_page!=""){
@@ -210,7 +210,7 @@ date: 2013.5.22
 						});
 
 						// 上一页点击
-						prev.live("click", function(){
+						prev.die().live("click", function(){
 							var that = $(this),
 								cur_page = that.attr("cur_page");
 
@@ -220,7 +220,7 @@ date: 2013.5.22
 						});
 
 						// 下一页点击
-						next.live("click", function(){
+						next.die().live("click", function(){
 							var that = $(this),
 								cur_page = that.attr("cur_page");
 
