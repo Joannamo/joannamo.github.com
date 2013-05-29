@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jPager</title>
+	<link rel="stylesheet" type="text/css" href="jPager/jPager.css">
+	<style type="text/css">
+	.info {margin:0; padding:0; margin-bottom:20px;  color:#88866F; font-size: 12px;}
+	.info li {padding:0; margin-bottom: 3px; list-style: square   inside;}
+	</style>
+</head>
+<body>
+<div id="infoContainer">
+	<ul class="info" style="color:red"><li>container 避免出现这种情况的元素</li></ul>
+	<ul id="info" class="info">
+		<li>这个很有特色1</li>
+		<li>这是很邦的插件2</li>
+		<li>好东西3</li>
+		<li>不错的选择4</li>
+		<li>再来一次5</li>
+		<li>收集了6</li>
+		<li>继续关注7</li>
+		<li>页码列表模式8</li>
+		<li>这个很有特色9</li>
+		<li>这是很邦的插件10</li>
+		<li>好东西11</li>
+		<li>不错的选择12</li>
+		<li>再来一次13</li>
+		<li>收集了14</li>
+		<li>继续关注15</li>
+		<li>页码列表模式16</li>
+		<li>这个很有特色17</li>
+		<li>这是很邦的插件18</li>
+		<li>好东西19</li>
+		<li>不错的选择20</li>
+		<li>再来一次21</li>
+		<li>收集了22</li>
+		<li>继续关注23</li>
+		<li>页码列表模式24</li>
+		<li>这个很有特色25</li>
+		<li>这是很邦的插件26</li>
+		<li>好东西27</li>
+		<li>不错的选择28</li>
+		<li>再来一次29</li>
+		<li>收集了30</li>
+		<li>继续关注31</li>
+		<li>页码列表模式32</li>
+		<li>这个很有特色33</li>
+		<li>这是很邦的插件34</li>
+		<li>好东西35</li>
+		<li>不错的选择36</li>
+		<li>再来一次37</li>
+		<li>收集了38</li>
+		<li>继续关注39</li>
+	</ul>
+	
+	<!-- <div class="jPager_container">
+		<div class="jPager_Select">
+			<span>每页显示</span>
+			<select class="jSelect">
+				<option>10</option>
+				<option>20</option>
+				<option>50</option>
+				<option>100</option>
+			</select>
+		</div>
+		<ul class="jPager">
+			<li class="first"><a href="javascript:;">首页</a></li>
+			<li class="prev"><a href="javascript:;">上一页</a></li>
+			<li class="active"><a href="javascript:;">1</a></li>
+			<li><a href="javascript:;">2</a></li>
+			<li><a href="javascript:;">3</a></li>
+			<li><a href="javascript:;">4</a></li>
+			<li><a href="javascript:;">5</a></li>
+			<li><a href="javascript:;">6</a></li>
+			<li class="next"><a href="javascript:;">下一页</a></li>
+			<li class="last"><a href="javascript:;">尾页</a></li>
+			<li><span>共130条</span></li>
+		</ul>		
+	</div> -->
+	
+</div>
+
+
+<script type="text/javascript" src="jPager/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="jPager/jquery.jPager.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#infoContainer").jPager({
+		container: "#info",
+		position: "after",            
+		showLength: true,            
+		showSelect: true,
+		showAction:true,          
+		perPage: 10,                  
+		select: [10, 20, 50, 100],
+		activePage: 1, 
+		textmap: {
+			first: "首页",
+			last: "末页",
+			prev: "上一页",
+			next: "下一页"
+		},               
+		children: "li"                
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/*
+author: Joanna
+date: 2013.5.22
+*/
+
+.jPager_container {overflow: hidden;}
+.jPager {float:left; margin:0; padding:0; /*border:#dddddd solid 1px; border-right: 0 none;*/ display:inline-block;  *display:inline; zoom:1; font-size: 12px; color:#0088cc; border-radius: 3px; background: #fff; overflow: hidden;}
+.jPager li {margin:0; padding:0; margin-right:5px; /*border:#dddddd solid 1px; border-top:0 none; border-bottom: 0 none;*/  float: left; list-style: none;}
+.jPager li a {display:block; padding:6px 10px;  color:#0088cc; text-decoration:none; border:#dddddd solid 1px; border-radius: 3px;}
+.jPager li a:hover {background: #f5f5f5;}
+.jPager li span {display:block; float: left; padding:6px 10px; color: #c6a999;}
+.jPager li.disabled a,
+.jPager li.active a {background: #f5f5f5; color: #c6a999; cursor: default;}
+.jPager li.active a {color:#0088cc;}
+.jPager_Select {float:left; font-size: 12px; margin-right: 4px; color: #88866F;}
+.jPager_Select select {padding:4px; width: 60px; border:#dddddd solid 1px; border-radius: 3px; color: #88866F;}
